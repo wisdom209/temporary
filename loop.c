@@ -2,12 +2,17 @@
 
 int main(void)
 {
-	int arr[] = {1, 2, 3, 4, 5};
-	//print them using a loop
-	int i = 0;
-	while (i < 5)
+	int i = 1, count = 0;
+
+	while (1)
 	{
-		printf("%d\n", arr[i]);
+		if (i % 2 == 0)
+		{
+			printf("%d\n", i);
+			count++;
+		}
+		if (count == 15)
+			break;
 		i++;
 	}
 	return (0);
